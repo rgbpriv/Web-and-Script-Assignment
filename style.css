@@ -1,6 +1,8 @@
 @charset "UTF-8";
 /* CSS Document */
 /* The body tag style applies to all elements on the page */
+
+
 body {
 
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -9,6 +11,23 @@ body {
     background: -webkit-linear-gradient(top, rgb(0, 0, 0) 0%, rgb(123, 123, 123) 100%); 
     background: -o-linear-gradient(top, rgb(0, 0, 0) 0%, rgb(123, 123, 123) 100%); 
     background: linear-gradient(to bottom, rgb(0, 0, 0) 0%,rgb(123, 123, 123) 100%); 
+}
+
+@media (max-width: 1250px) {
+ 
+  body {
+   
+    display: flex;
+    justify-content: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  /*  background: yellow; */
+    background: -moz-linear-gradient(top, rgb(0, 0, 0) 0%, rgb(123, 123, 123) 100%); 
+    background: -webkit-linear-gradient(top, rgb(0, 0, 0) 0%, rgb(123, 123, 123) 100%); 
+    background: -o-linear-gradient(top, rgb(0, 0, 0) 0%, rgb(123, 123, 123) 100%); 
+    background: linear-gradient(to bottom, rgb(0, 0, 0) 0%,rgb(123, 123, 123) 100%); 
+}
+
+
 }
 
 ul {
@@ -41,9 +60,23 @@ ul {
 width: 960px;height: 800px;
 margin-left: auto;
 margin-right: auto;
-background-color:transparent ;
+background-color:transparent;
 
 }
+
+@media (max-width: 1250px) {
+ 
+  #wrapper {
+    color: azure;
+width: 100%;height: 100%;
+margin-left: auto;
+margin-right: auto;
+background-color:transparent;
+
+}
+
+}
+
 video {
     width: 400px;
     padding: 15px;
@@ -60,12 +93,38 @@ width: 600px;height: 600px;
 margin-left: 15px;
 background-color:rgb(150, 150, 150, 0.121);
 }
+
+@media (max-width: 1250px) {
+  #right-column {
+    color: azure; 
+   width: 600px;height: 600px;
+   margin-right: 36.8%;
+   background-color:rgba(150, 150, 150, 0);
+   }
+   
+}
+
 /* The left-column ID style is floated left */
 #left-column {
 color: azure;
 float: left;
-width: 360px;background-color:rgba(150, 150, 150, 0.121);
+width: 340px;background-color:rgba(150, 150, 150, 0);
 height:600px;
+}
+
+
+
+@media (max-width: 1250px) {
+  #left-column {
+    display: flex;
+    justify-content: center;
+    color: azure;
+    margin-left: 10;
+    margin-right: auto;  
+    width: 600px;background-color:rgba(150, 150, 150, 0);
+    height:600px;
+
+    }
 }
 #feedback-column {
   color: azure;
@@ -102,6 +161,19 @@ height:80px;
     opacity:1; 
     color: rgba(240, 248, 255, 0);
     } 
+
+    @media (max-width: 1250px) {
+      #banner{ 
+        height:120px;
+        width: auto; 
+        background-color:transparent; 
+        } 
+      
+        #banner h1 { 
+        color: white; 
+        } 
+        
+    }
     
     .box:hover { 
     background-color:rgba(123, 123, 123, 0.234); 
@@ -113,7 +185,7 @@ height:80px;
     clear: both; 
     } 
 
-
+    
 
 
 
