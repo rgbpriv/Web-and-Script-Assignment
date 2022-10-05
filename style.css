@@ -223,6 +223,7 @@ button:hover {
     
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
+  display: block;
   font-size:large;
   float: left;
   width: 33.33%;
