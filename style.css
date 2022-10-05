@@ -134,6 +134,16 @@ height:600px;
   width: 800px;background-color:rgba(150, 150, 150, 0.121);
   height:600px;
   }
+
+  @media (max-width: 1250px) {
+    #feedback-column {
+      color: azure;
+      float: left;
+      width: 100%;background-color:rgba(150, 150, 150, 0.121);
+      height:100%;
+      }
+  
+      }
 /* Defining a style for a set of tags separated by commas applies the style to
 all tags */
 h1,h2,h3,h4,h5,h6,p,li {
